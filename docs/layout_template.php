@@ -23,6 +23,11 @@
             },
             preload: ["jquery"]
         });
+        
+        // 导入到全局域（scope）内 不然jquery对外不可见！
+        seajs.use(['jquery'], function ($) {
+            window.jQuery  =   window.$ = $ ;
+        });
 
     </script>
 
