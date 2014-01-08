@@ -32,12 +32,14 @@ seaJs 自有一套目录规范 这里只是使用最简单的结构
 
 ### seaJs 目录存放位置
 官网介绍 一般会用类似这样的结构：
+~~~
              statics(assets)
                     --sea-modules
                       --seajs
                       --alice
                       --gallery
                       --arale
+~~~                      
 
 该目录位于webroot下 可用浏览器直接访问到  在yii中assets目录一般是可以直接访问到的 但由于assets 是yii发布来自各个不同组件
 ，扩展 标准内置widget（gridview listview cactiveform...jui..）而拷贝而来的东西 ， 是程序自动生成的  我们不应该手动往里面
